@@ -1,30 +1,5 @@
 import './App.css'
-import ButtonSizeSmall from "./components/Sizes/ButtonSizeSmall.jsx";
-import ButtonSizeNormal from "./components/Sizes/ButtonSizeNormal.jsx";
-import ButtonSizeMedium from "./components/Sizes/ButtonSizeMedium.jsx";
-import ButtonSizeLarge from "./components/Sizes/ButtonSizeLarge.jsx";
-import NormalBorder from "./components/Borders/NormalBorder.jsx";
-import SquaredBorder from "./components/Borders/SquaredBorder.jsx";
-import RoundedBorder from "./components/Borders/RoundedBorder.jsx";
-import DisabledState from "./components/States/DisabledState.jsx";
-import LoadingState from "./components/States/LoadingState.jsx";
-import ColorStateNormal from "./components/ColorStates/ColorStateNormal.jsx";
-import ColorStatePrimary from "./components/ColorStates/ColorStatePrimary.jsx";
-import ColorStateLink from "./components/ColorStates/ColorStateLink.jsx";
-import ColorStateInfo from "./components/ColorStates/ColorStateInfo.jsx";
-import ColorStateSuccess from "./components/ColorStates/ColorStateSuccess.jsx";
-import ColorStateWarning from "./components/ColorStates/ColorStateWarning.jsx";
-import ColorStateDanger from "./components/ColorStates/ColorStateDanger.jsx";
-import ColorStateOutlineDanger from "./components/ColorOutlineStates/ColorStateOutlineDanger.jsx";
-import ColorStateOutlineInfo from "./components/ColorOutlineStates/ColorStateOutlineInfo.jsx";
-import ColorStateOutlineLink from "./components/ColorOutlineStates/ColorStateOutlineLink.jsx";
-import ColorStateOutlineNormal from "./components/ColorOutlineStates/ColorStateOutlineNormal.jsx";
-import ColorStateOutlinePrimary from "./components/ColorOutlineStates/ColorStateOutlinePrimary.jsx";
-import ColorStateOutlineSuccess from "./components/ColorOutlineStates/ColorStateOutlineSuccess.jsx";
-import ColorStateOutlineWarning from "./components/ColorOutlineStates/ColorStateOutlineWarning.jsx";
-import IconLeftButton from "./components/Icons/IconLeftButton.jsx";
-import IconRightButton from "./components/Icons/IconRightButton.jsx";
-import IconSuccess from "./components/Icons/IconSuccess.jsx";
+import MyButton from "./components/ButtonSettings.jsx";
 
 function App() {
 
@@ -32,47 +7,98 @@ function App() {
     <>
         <h1>SIZES</h1>
         <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <ButtonSizeSmall buttonText="SMALL" />
-            <ButtonSizeNormal buttonText="NORMAL" />
-            <ButtonSizeMedium buttonText="MEDIUM" />
-            <ButtonSizeLarge buttonText="LARGE" />
+            <MyButton size="Small" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                SMALL
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                NORMAL
+            </MyButton>
+            <MyButton size="Medium" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                MEDIUM
+            </MyButton>
+            <MyButton size="Large" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                LARGE
+            </MyButton>
         </div>
         <h1>BORDERS</h1>
         <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <NormalBorder buttonText="NORMAL" />
-            <SquaredBorder buttonText="SQUARED" />
-            <RoundedBorder buttonText="ROUNDED" />
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                NORMAL
+            </MyButton>
+            <MyButton size="Normal" borders="Squared" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                SQUARED
+            </MyButton>
+            <MyButton size="Normal" borders="Rounded" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                ROUNDED
+            </MyButton>
         </div>
         <h1>STATES</h1>
         <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <DisabledState buttonText="DISABLED" />
-            <LoadingState buttonText="Loading..." />
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black" buttonDisabled={true}>
+                DISABLED
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Loading" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                LOADING
+            </MyButton>
         </div>
         <h1>COLOR STATES</h1>
         <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <ColorStateNormal buttonText="NORMAL" />
-            <ColorStatePrimary buttonText="PRIMARY" />
-            <ColorStateLink buttonText="LINK" />
-            <ColorStateInfo buttonText="INFO" />
-            <ColorStateSuccess buttonText="SUCCESS" />
-            <ColorStateWarning buttonText="WARNING" />
-            <ColorStateDanger buttonText="DANGER" />
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                NORMAL
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Primary" border="Primary" colorButtonText="White">
+                PRIMARY
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Link" border="Link" colorButtonText="White">
+                LINK
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Info" border="Info" colorButtonText="White">
+                INFO
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Success" border="Success" colorButtonText="White">
+                SUCCESS
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Warning" border="Warning" colorButtonText="White">
+                WARNING
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Danger" border="Danger" colorButtonText="White">
+                DANGER
+            </MyButton>
         </div>
         <h1>COLOR OUTLINE STATES</h1>
         <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <ColorStateOutlineNormal buttonText="NORMAL" />
-            <ColorStateOutlinePrimary buttonText="PRIMARY" />
-            <ColorStateOutlineLink buttonText="LINK" />
-            <ColorStateOutlineInfo buttonText="INFO" />
-            <ColorStateOutlineSuccess buttonText="SUCCESS" />
-            <ColorStateOutlineWarning buttonText="WARNING" />
-            <ColorStateOutlineDanger buttonText="DANGER" />
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
+                NORMAL
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Primary" colorButtonText="Primary">
+                PRIMARY
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Link" colorButtonText="Link">
+                LINK
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Info" colorButtonText="Info">
+                INFO
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Success" colorButtonText="Success">
+                SUCCESS
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Warning" colorButtonText="Warning">
+                WARNING
+            </MyButton>
+            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Danger" colorButtonText="Danger">
+                DANGER
+            </MyButton>
         </div>
         <h1>ICONS</h1>
         <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <IconLeftButton buttonText="ICON LEFT" />
-            <IconRightButton buttonText="ICON RIGHT" />
-            <IconSuccess />
+            <MyButton size="Normal" borders="Rounded" state="Disabled" backgroundColor="Primary" border="Primary" colorButtonText="Normal" iconLeft={true}>
+                ICON LEFT
+            </MyButton>
+            <MyButton size="Normal" borders="Rounded" state="Disabled" backgroundColor="Info" border="Info" colorButtonText="Normal" iconRight={true}>
+                ICON RIGHT
+            </MyButton>
+            <MyButton size="Normal" borders="Rounded" state="Disabled" backgroundColor="Primary" border="Primary" colorButtonText="Primary" iconSuccess={true}>
+            </MyButton>
         </div>
     </>
   )
