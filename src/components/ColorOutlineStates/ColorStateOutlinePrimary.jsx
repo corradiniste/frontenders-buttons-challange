@@ -3,7 +3,7 @@ import React from 'react';
 const ColorStateOutlinePrimary = ({ buttonText }) => {
     const buttonStyle = {
         display: 'flex',
-        padding: '0.625rem 1.25rem',
+        padding: '0.75rem 1.375rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.625rem',
