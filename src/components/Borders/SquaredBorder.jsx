@@ -8,11 +8,6 @@ const SquaredBorder = ({ buttonText }) => {
         alignItems: 'center',
         gap: '0.625rem',
         background: '#F0F0F0',
-        border: 'none',
-        outline: 'none',
-    };
-
-    const textStyle = {
         color: '#1C1A1A',
         textAlign: 'center',
         fontFamily: 'Poppins',
@@ -20,11 +15,14 @@ const SquaredBorder = ({ buttonText }) => {
         fontStyle: 'normal',
         fontWeight: 400,
         lineHeight: 'normal',
+        border: 'none',
+        outline: 'none',
+        borderRadius: '0',
     };
 
     return (
         <button style={buttonStyle}>
-            <span style={textStyle}>{buttonText}</span>
+            {buttonText}
         </button>
     );
 };
