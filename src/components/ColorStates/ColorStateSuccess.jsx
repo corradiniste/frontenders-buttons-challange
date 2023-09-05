@@ -11,7 +11,7 @@ const ColorStateSuccess = ({ buttonText }) => {
         background: '#30CC71',
         border: 'none',
         outline: 'none',
-        color: '#FFF', // Aggiunto il colore del testo
+        color: '#FFF',
         textAlign: 'center',
         fontFamily: 'Poppins',
         fontSize: '0.75rem',

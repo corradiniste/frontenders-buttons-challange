@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons"; // Importa l'icona corretta
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const IconLeftButton = ({ rightText, buttonText }) => {
     const buttonStyle = {

@@ -11,7 +11,7 @@ const ColorStateWarning = ({ buttonText }) => {
         background: '#F49D10',
         border: 'none',
         outline: 'none',
-        color: '#FFF', // Aggiunto il colore del testo
+        color: '#FFF',
         textAlign: 'center',
         fontFamily: 'Poppins',
         fontSize: '0.75rem',

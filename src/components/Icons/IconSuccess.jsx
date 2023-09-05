@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons"; // Importa l'icona di successo
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const IconSuccess = () => {
     const buttonStyle = {

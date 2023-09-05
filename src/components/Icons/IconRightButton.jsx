@@ -1,11 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons"; // Importa l'icona corretta
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const IconRightButton = ({ rightText, buttonText }) => {
     const buttonStyle = {
         display: 'flex',
-        padding: '0.625rem 0.875rem 0.625rem 1.25rem', // Ho invertito i valori qui
+        padding: '0.625rem 0.875rem 0.625rem 1.25rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.875rem',
@@ -29,7 +29,7 @@ const IconRightButton = ({ rightText, buttonText }) => {
 
     return (
         <button style={buttonStyle}>
-            <span>{buttonText}</span> {/* Ho aggiunto un elemento span per il testo */}
+            <span>{buttonText}</span>
             <FontAwesomeIcon icon={faLocationDot} style={{ color: '#ffffff' }} />
         </button>
     );
