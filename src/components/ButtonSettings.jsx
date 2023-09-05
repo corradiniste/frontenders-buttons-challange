@@ -127,7 +127,7 @@ const MyButton = ({ size, borders, state, loadingText, children, backgroundColor
                         return prevDots + '.';
                     }
                 });
-            }, 500); // Cambiato il tempo a 500 millisecondi per avere una velocità di aggiornamento più rapida
+            }, 500);
         } else {
             setDots('');
             clearInterval(intervalId);
