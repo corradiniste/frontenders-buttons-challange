@@ -2,45 +2,41 @@ import './App.css'
 import MyButton from "./components/ButtonSettings.jsx";
 
 function App() {
-
-  return (
-    <>
-        <h1>SIZES</h1>
-        <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <MyButton size="Small" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                SMALL
-            </MyButton>
-            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                NORMAL
-            </MyButton>
-            <MyButton size="Medium" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                MEDIUM
-            </MyButton>
-            <MyButton size="Large" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                LARGE
-            </MyButton>
-        </div>
-        <h1>BORDERS</h1>
-        <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                NORMAL
-            </MyButton>
-            <MyButton size="Normal" borders="Squared" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                SQUARED
-            </MyButton>
-            <MyButton size="Normal" borders="Rounded" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                ROUNDED
-            </MyButton>
-        </div>
-        <h1>STATES</h1>
-        <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
-            <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black" buttonDisabled={true}>
-                DISABLED
-            </MyButton>
-            <MyButton size="Normal" borders="Normal" state="Loading" backgroundColor="Normal" border="Normal" colorButtonText="Black">
-                LOADING
-            </MyButton>
-        </div>
+    return (
+        <>
+            <h1>SIZES</h1>
+            <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
+                <MyButton>
+                    SMALL
+                </MyButton>
+                <MyButton size="Medium">
+                    MEDIUM
+                </MyButton>
+                <MyButton size="Large">
+                    LARGE
+                </MyButton>
+            </div>
+            <h1>BORDERS</h1>
+            <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
+                <MyButton>
+                    NORMAL
+                </MyButton>
+                <MyButton borders="Squared">
+                    SQUARED
+                </MyButton>
+                <MyButton borders="Rounded">
+                    ROUNDED
+                </MyButton>
+            </div>
+            <h1>STATES</h1>
+            <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
+                <MyButton buttonDisabled={true}>
+                    DISABLED
+                </MyButton>
+                <MyButton state="Loading">
+                    LOADING
+                </MyButton>
+            </div>
         <h1>COLOR STATES</h1>
         <div style={{ display: 'inline-grid', gridAutoFlow: 'column', gap: '10px', alignItems: 'center' }}>
             <MyButton size="Normal" borders="Normal" state="Disabled" backgroundColor="Normal" border="Normal" colorButtonText="Black">

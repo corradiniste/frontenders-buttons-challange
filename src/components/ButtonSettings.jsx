@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faUser, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
-const MyButton = ({ size, borders, state, loadingText, children, backgroundColor, border, colorButtonText, iconLeft, iconRight, iconSuccess, buttonDisabled }) => {
+const MyButton = ({ size = "Normal", borders = "Normal", state = "Disabled", loadingText, children, backgroundColor = "Normal", border = "Normal", colorButtonText = "Black", iconLeft, iconRight, iconSuccess, buttonDisabled }) => {
     const colours = {
         Black: '#1C1A1A',
         Normal: '#F0F0F0',
