@@ -97,12 +97,6 @@ const MyButton = ({ size = "Normal", borders = "Normal", state = "Disabled", loa
         position: 'relative',
     };
 
-    const loaderContainerStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-    };
-
     const textStyle = {
         textAlign: 'center',
         fontFamily: 'Poppins',
